@@ -66,6 +66,10 @@ font-size: larger;
     font-size: 3rem;
 }
 
+h1{
+    font-size: 2.4rem;
+}
+
 
 .bottom{
     display: flex;
