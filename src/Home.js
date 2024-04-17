@@ -15,7 +15,7 @@ const Home = () => {
                     <p>Consider us your partner for all things sustainable. To keep you motivated on the journey, we will provide you with engaging information about climate change, the latest updates on climate policies and lifestyle tips that you can adopt to reduce your impact on the environment.</p>
                 </div>
                 <div className="right1">
-                    <img src="/impact.png" alt="" />
+                    <img src="/Impact.png" alt="" />
                 </div>
             </div>
 
