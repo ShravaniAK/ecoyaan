@@ -5,35 +5,30 @@ import ImageSliderAuto from './ImageSliderAuto';
 import Home from './Home';
 import ContactForm from './Contact';
 import Footer from './Footer/Footer';
+import Header from './Header';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import About from './About';
 
-export const ImageData = [
-    {
-        ImageNo:'1/3',
-       
-        ImageSrc: "/carousel-1.png",
-       
-    },
-    {
-        ImageNo: '2/3',
-       
-        ImageSrc: "/carousel-2.png",
-       
-    },
-    {
-        ImageNo: '3/3',
-        
-        ImageSrc: '/carousel-3.png',
-       
-    }
-];
+
 
 function App() {
   return (
    <div>
-    <ImageSliderAuto ImageData={ImageData} SlideInterValTime={ 3000}/>
-    <Home/>
-    <ContactForm/>
+    <BrowserRouter>
+    <Header/>
+    <Routes>
+    <Route path='/' element={<Home />} />
+    <Route path='/about' element={<About />} />
+    
+    
+    
+    
+    </Routes>
     <Footer/>
+    </BrowserRouter>
+    
+    
+   
    </div>
   );
 }

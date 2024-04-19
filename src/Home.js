@@ -1,9 +1,33 @@
 import React from 'react'
 import "./home.css"
+import ImageSliderAuto from './ImageSliderAuto'
+import ContactForm from './Contact';
+
+export const ImageData = [
+    {
+        ImageNo:'1/3',
+       
+        ImageSrc: "/carousel-1.png",
+       
+    },
+    {
+        ImageNo: '2/3',
+       
+        ImageSrc: "/carousel-2.png",
+       
+    },
+    {
+        ImageNo: '3/3',
+        
+        ImageSrc: '/carousel-3.png',
+       
+    }
+];
 
 const Home = () => {
     return (
         <div>
+            <ImageSliderAuto ImageData={ImageData} SlideInterValTime={ 3000}/>
             <div className="container1">
                 <div className="left1">
                     <h1>
@@ -62,6 +86,7 @@ const Home = () => {
             <div className="container3">
                
                </div>
+               <ContactForm/>
         </div>
     )
 }
